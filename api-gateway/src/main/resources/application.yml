@@ -1,14 +1,16 @@
 server:
-  port: 8081
+  port: 8080
 
 spring:
   application:
     name: api-gateway
+
   datasource:
-    url: jdbc:mysql://localhost:3306/gatewaydb
+    url: jdbc:mysql://gatewaydb:3306/gatewaydb
     username: root
     password: Manoj@8719895574
     driver-class-name: com.mysql.cj.jdbc.Driver
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -16,3 +18,10 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true

@@ -1,21 +1,60 @@
-# Maven
+# ======================
+# Maven / Java
+# ======================
 target/
 *.log
+*.class
 
+# ======================
 # Node (if any frontend)
+# ======================
 node_modules/
+dist/
+build/
 
-# IDE
+# ======================
+# IDE / Editors
+# ======================
+# IntelliJ IDEA
 .idea/
-.vscode/
 *.iml
 
-# OS
-.DS_Store
+# VS Code
+.vscode/
 
-# Env & secrets
+# Eclipse / STS
+.classpath
+.project
+.settings/
+
+# ======================
+# OS generated files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Environment & Secrets
+# ======================
 .env
 *.env
+application-*.yml
+application-*.properties
 
+# ======================
 # Docker
+# ======================
 **/data/
+docker-data/
+*.tar
+
+# ======================
+# Spring Boot
+# ======================
+logs/
+out/
+
+# ======================
+# Metadata / Workspace
+# ======================
+.metadata/
